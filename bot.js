@@ -98,8 +98,7 @@ Bot.initEvents = function() {
 	Events.registerEvents(this.bot);
 };
 
-Bot.login = function() {
-	this.bot.login(Files.data.settings.token);
+Bot.login(process.env.BOT_TOKEN);
 };
 
 Bot.onReady = function() {
